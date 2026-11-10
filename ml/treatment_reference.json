@@ -1,0 +1,263 @@
+{
+  "_comment": "Disease descriptions, severity, cause categories, treatment options, precautions and references. Merged into plant_knowledge.json's condition entries at load time by plant_knowledge.py. Separated so the clinical reference material can be reviewed and cited independently of the plant care profiles.",
+  "_version": "1.0.0",
+
+  "severity_scale": {
+    "none": { "label": "None", "rank": 0, "guidance": "No action needed beyond routine care." },
+    "mild": { "label": "Mild", "rank": 1, "guidance": "Monitor and improve cultural conditions; treatment is usually unnecessary." },
+    "moderate": { "label": "Moderate", "rank": 2, "guidance": "Act within a few days. Remove affected tissue and correct the conditions favouring it." },
+    "severe": { "label": "Severe", "rank": 3, "guidance": "Act immediately. Spread can be rapid and crop loss substantial." },
+    "unknown": { "label": "Unknown", "rank": 1, "guidance": "Severity cannot be estimated from the available evidence." }
+  },
+
+  "cause_categories": {
+    "fungal": { "label": "Fungal infection", "icon": "fungal" },
+    "bacterial": { "label": "Bacterial infection", "icon": "bacterial" },
+    "viral": { "label": "Viral infection", "icon": "viral" },
+    "nutrient": { "label": "Nutrient deficiency", "icon": "nutrient" },
+    "water": { "label": "Water stress", "icon": "water" },
+    "environmental": { "label": "Environmental conditions", "icon": "environmental" },
+    "pest": { "label": "Pest damage", "icon": "pest" },
+    "physiological": { "label": "Normal plant physiology", "icon": "physiological" }
+  },
+
+  "conditions": {
+    "healthy": {
+      "display_name": "Healthy leaf",
+      "severity": "none",
+      "cause_categories": [],
+      "description": "No disease symptoms were measurable on the visible leaf surface. Tissue colour is uniform, there are no lesions, and the leaf outline is intact. This describes only what is visible in this image: very early infections and symptoms on the leaf underside will not appear.",
+      "references": ["General crop scouting practice"]
+    },
+    "leaf_spot": {
+      "display_name": "Leaf spot",
+      "severity": "moderate",
+      "cause_categories": ["fungal", "bacterial", "environmental"],
+      "description": "Leaf spot is a general name for discrete necrotic lesions caused by several fungal genera (notably Septoria, Cercospora and Alternaria) and by some bacteria. Spots enlarge and coalesce, reducing the photosynthetic area and causing premature leaf drop. Spread depends on leaf wetness, so it is driven as much by irrigation method as by the pathogen's presence.",
+      "chemical_precautions": [
+        "Confirm the product is registered for your specific crop before use",
+        "Protectant fungicides work preventively - they do not cure existing lesions",
+        "Rotate between different active ingredient groups to avoid resistance",
+        "Observe the pre-harvest interval printed on the label",
+        "Do not apply in full sun or above 30 degrees Celsius"
+      ],
+      "references": [
+        "University extension plant pathology guidance on foliar leaf spot diseases",
+        "FAO integrated pest management principles for foliar fungal disease"
+      ]
+    },
+    "bacterial_leaf_spot": {
+      "display_name": "Bacterial leaf spot",
+      "severity": "moderate",
+      "cause_categories": ["bacterial", "environmental", "water"],
+      "description": "Caused by Xanthomonas and Pseudomonas species. Lesions begin water-soaked, turn brown and angular because they are bounded by the leaf veins, and are often surrounded by a yellow halo. The bacterium is usually introduced on seed or transplants rather than arising locally, and spreads by rain splash, overhead irrigation and handling wet foliage.",
+      "chemical_precautions": [
+        "Bactericides are protective only; they cannot eradicate an established infection",
+        "Copper can accumulate in soil and become phytotoxic with repeated use",
+        "Confirm registration for your crop and growth stage",
+        "Never work among plants while the foliage is wet, with or without treatment",
+        "Follow the label's maximum number of applications per season"
+      ],
+      "references": [
+        "University extension guidance on bacterial spot of tomato and pepper",
+        "Seed health testing and hot-water treatment protocols for Xanthomonas"
+      ]
+    },
+    "early_blight": {
+      "display_name": "Early blight",
+      "severity": "moderate",
+      "cause_categories": ["fungal", "environmental", "nutrient"],
+      "description": "A common fungal disease of tomato and potato caused by Alternaria solani. It produces brown, roughly circular lesions with concentric rings - the characteristic target-board pattern - usually with a yellow halo. It begins on the oldest, lowest leaves and progresses upward, causing defoliation that reduces yield and exposes fruit to sunscald. The fungus overwinters in crop debris and infected tubers, and plants under nitrogen or drought stress lose leaves fastest.",
+      "chemical_precautions": [
+        "Apply protectant fungicides before symptoms become widespread; they do not cure existing lesions",
+        "Alternate active ingredient groups between sprays to limit resistance development",
+        "Confirm the product is approved for tomato or potato in your country",
+        "Observe the pre-harvest interval strictly on a crop that is picked repeatedly",
+        "Ensure full coverage including the lower leaf surfaces"
+      ],
+      "references": [
+        "University extension fact sheets on early blight of tomato and potato (Alternaria solani)",
+        "FAO guidance on integrated management of Alternaria diseases in solanaceous crops"
+      ]
+    },
+    "late_blight": {
+      "display_name": "Late blight",
+      "severity": "severe",
+      "cause_categories": ["fungal", "environmental", "water"],
+      "description": "Caused by the oomycete Phytophthora infestans - the pathogen responsible for historic famine-scale crop failure. Lesions are large, irregular, greasy and water-soaked, grey-green turning brown-black, without the concentric rings of early blight. In cool, wet, humid weather it can destroy an entire planting within days. White sporulation appears at the lesion margin on the leaf underside in high humidity.",
+      "chemical_precautions": [
+        "This disease moves faster than a spray programme can be corrected - act on the first suspicion",
+        "Systemic products must be alternated with protectants to limit resistance",
+        "Confirm registration for your crop; potato and tomato approvals differ",
+        "Protect tubers by destroying potato haulm before harvest",
+        "Destroy infected material rather than composting it"
+      ],
+      "references": [
+        "University extension late blight management guidance and regional forecasting services",
+        "FAO emergency guidance on Phytophthora infestans in potato and tomato"
+      ]
+    },
+    "powdery_mildew": {
+      "display_name": "Powdery mildew",
+      "severity": "moderate",
+      "cause_categories": ["fungal", "environmental"],
+      "description": "A group of host-specific fungi producing a white to grey powdery coating, usually first on the upper leaf surface. Unlike most foliar fungi it needs no free water to infect, so it thrives in warm, dry days with cool humid nights and in shaded, crowded foliage. Severe infection distorts new growth, reduces photosynthesis and lowers fruit quality. The coating rubs off between the fingers, which distinguishes it from mineral deposits.",
+      "chemical_precautions": [
+        "Never apply sulphur within two weeks of an oil spray, or above 30 degrees Celsius - the combination burns foliage",
+        "Some ornamental and cucurbit varieties are sulphur-sensitive; test on a few leaves first",
+        "Confirm registration for your crop",
+        "Oils and bicarbonates need thorough coverage to work; they act on contact",
+        "Rotate active ingredient groups - powdery mildews develop resistance readily"
+      ],
+      "references": [
+        "University extension guidance on powdery mildew of roses, grapes and cucurbits",
+        "Published evaluations of potassium bicarbonate and sulphur for powdery mildew control"
+      ]
+    },
+    "downy_mildew": {
+      "display_name": "Downy mildew",
+      "severity": "severe",
+      "cause_categories": ["fungal", "environmental", "water"],
+      "description": "Caused by oomycete pathogens that require cool temperatures and sustained high humidity. Angular yellow patches appear on the upper leaf surface, bounded by the veins, with greyish-purple fuzzy growth directly beneath them on the underside. It differs from powdery mildew in needing free water or very high humidity, and in growing on the underside rather than the top.",
+      "chemical_precautions": [
+        "Reducing leaf wetness duration is more effective than any spray",
+        "Systemic oomycete products require strict rotation to avoid resistance",
+        "Confirm registration for your crop and the permitted number of applications",
+        "Apply before infection periods indicated by cool, humid weather",
+        "Cover the leaf underside, where the pathogen sporulates"
+      ],
+      "references": [
+        "University extension guidance on downy mildew in grapes and cucurbits",
+        "Regional downy mildew forecasting and spray-timing advisories"
+      ]
+    },
+    "rust": {
+      "display_name": "Rust disease",
+      "severity": "moderate",
+      "cause_categories": ["fungal", "environmental"],
+      "description": "Rust fungi produce small raised pustules that rupture the leaf surface and release orange to reddish-brown spores; rubbing a pustule onto white paper leaves an orange stain. Pustules are usually denser on the leaf underside. Many rusts have narrow host ranges and some require an alternate host to complete their life cycle. Heavy infection causes yellowing and early leaf drop.",
+      "chemical_precautions": [
+        "Treat early - established pustules cannot be reversed, only further spread prevented",
+        "Avoid sulphur in hot weather and near oil applications",
+        "Confirm registration for your crop",
+        "Remove and destroy fallen infected leaves before spraying, or re-infection continues",
+        "Rotate active ingredient groups between applications"
+      ],
+      "references": [
+        "University extension guidance on rust diseases of beans, roses and cereals",
+        "Published host-range and alternate-host data for agricultural rust fungi"
+      ]
+    },
+    "anthracnose": {
+      "display_name": "Anthracnose",
+      "severity": "moderate",
+      "cause_categories": ["fungal", "environmental", "water"],
+      "description": "Caused by Colletotrichum species. Produces dark, often sunken lesions on leaves, twigs and fruit, sometimes with a salmon-pink spore mass in the lesion centre under humid conditions. Lesion centres may dry and drop out, leaving a hole. It is spread by rain splash and enters through wounds, so pruning in wet weather markedly increases infection. Mummified fruit and infected twigs are the main overwintering source.",
+      "chemical_precautions": [
+        "Sanitation matters more than spraying: remove mummified fruit and infected twigs first",
+        "Prune only in dry weather, and disinfect tools between cuts",
+        "Confirm registration for your crop - mango, chilli and bean approvals differ",
+        "Apply protectants ahead of forecast wet periods",
+        "Observe pre-harvest intervals on fruit crops"
+      ],
+      "references": [
+        "University extension guidance on anthracnose of mango, chilli and beans",
+        "FAO postharvest guidance on Colletotrichum management in tropical fruit"
+      ]
+    },
+    "leaf_scorch": {
+      "display_name": "Leaf scorch / marginal burn",
+      "severity": "moderate",
+      "cause_categories": ["water", "environmental", "nutrient"],
+      "description": "Browning concentrated along the leaf margins while the interior stays green. This is usually abiotic: the leaf edge is the furthest point from the water supply, so it dies first whenever water cannot reach it. Causes include drought, waterlogged roots that cannot take water up, salt accumulation from over-fertilising or hard water, wind and heat stress, and root damage. Some bacterial scorch diseases produce the same pattern, so an abiotic cause is likely but not certain.",
+      "chemical_precautions": [],
+      "references": [
+        "University extension guidance on abiotic leaf scorch and salt injury",
+        "Horticultural guidance on irrigation water quality and salt management"
+      ]
+    },
+    "mosaic_virus": {
+      "display_name": "Mosaic-like symptoms (possible virus)",
+      "severity": "severe",
+      "cause_categories": ["viral", "pest"],
+      "description": "Mottled light and dark green patterning, often with distorted, narrowed or strap-like new growth and stunted plants. Mosaic viruses spread mechanically on hands and tools and are transmitted by insect vectors including aphids, whiteflies and thrips. There is no cure for an infected plant; management means removing it and controlling the vectors. Naturally variegated cultivars and some mineral deficiencies mimic the pattern, so confirm the variety before acting.",
+      "chemical_precautions": [],
+      "references": [
+        "University extension guidance on tomato mosaic and yellow leaf curl viruses",
+        "Published guidance on insect vector management for plant virus control"
+      ]
+    },
+    "pest_damage": {
+      "display_name": "Insect or pest feeding damage",
+      "severity": "mild",
+      "cause_categories": ["pest", "environmental"],
+      "description": "Tissue has been removed from the leaf, leaving holes or ragged margins. Chewing insects - caterpillars, beetles, grasshoppers, slugs and snails - are the usual cause, each leaving a characteristic pattern: ragged edges from caterpillars, clean round holes from some beetles, silvery slime trails from slugs. Wind and hail injury can look similar. Identifying the pest matters because the effective treatments differ completely between them.",
+      "chemical_precautions": [
+        "Identify the pest before treating - products are often specific to one group",
+        "Bacillus thuringiensis affects only caterpillars and is harmless to other insects",
+        "Avoid broad-spectrum insecticides, which kill the predators keeping pests in check",
+        "Do not spray flowering plants when pollinators are active",
+        "Confirm registration for your crop and observe pre-harvest intervals"
+      ],
+      "references": [
+        "FAO and university extension integrated pest management guidance",
+        "Extension diagnostic keys for chewing insect damage patterns"
+      ]
+    },
+    "nutrient_deficiency": {
+      "display_name": "Nutrient deficiency / chlorosis",
+      "severity": "mild",
+      "cause_categories": ["nutrient", "water", "environmental"],
+      "description": "Yellowing without lesions. The pattern identifies the nutrient: uniform paling of the oldest leaves suggests nitrogen; yellowing between still-green veins on new growth suggests iron; the same pattern on older leaves suggests magnesium. A deficiency symptom does not always mean the nutrient is absent - soil pH outside roughly 6.0 to 7.0 locks nutrients up chemically, and waterlogged or compacted roots cannot take up what is there. Feeding without establishing which applies often makes things worse.",
+      "chemical_precautions": [
+        "Do not apply a heavy corrective dose as a guess - salt injury looks like worsening disease",
+        "A soil test for pH and nutrient levels is the only reliable basis for correction",
+        "Chelated micronutrients are needed in alkaline soils; sulphate forms will not be taken up",
+        "Correct soil pH before adding more fertiliser",
+        "Follow label rates; foliar feeds burn leaves at excessive concentration"
+      ],
+      "references": [
+        "University extension nutrient deficiency diagnostic keys",
+        "FAO guidance on soil fertility assessment and plant nutrition"
+      ]
+    },
+    "senescence": {
+      "display_name": "Natural leaf ageing",
+      "severity": "none",
+      "cause_categories": ["physiological"],
+      "description": "Normal senescence. The plant withdraws nutrients from its oldest leaves to support new growth, which yellows and then browns them. If only the lowest, oldest leaves are affected and new growth is vigorous, this needs no treatment beyond removing the spent leaf.",
+      "chemical_precautions": [],
+      "references": ["Standard plant physiology references on leaf senescence"]
+    }
+  },
+
+  "treatment_additions": {
+    "leaf_spot": {
+      "organic_options": [
+        "Neem oil spray on dry foliage, out of direct sun, repeated at label intervals",
+        "Trichoderma-based biofungicide applied to soil and lower foliage",
+        "Potassium bicarbonate spray, which also raises leaf-surface pH against spore germination",
+        "Garlic or turmeric extract sprays, used by many growers as a mild protectant",
+        "Remove and destroy heavily infected leaves rather than composting them"
+      ],
+      "chemical_additions": ["azoxystrobin"]
+    },
+    "early_blight": {
+      "organic_options": [
+        "Neem oil spray on dry foliage, applied before the disease becomes widespread",
+        "Trichoderma harzianum biofungicide to suppress soil-borne inoculum",
+        "Copper-based protectant on healthy foliage above the affected leaves",
+        "Bacillus subtilis biofungicide as a preventive on new growth",
+        "Thick organic mulch to break the soil-to-leaf spore splash cycle",
+        "Remove and destroy the affected lower leaves"
+      ],
+      "chemical_additions": ["azoxystrobin"]
+    },
+    "powdery_mildew": {
+      "chemical_additions": ["azoxystrobin"]
+    },
+    "rust": {
+      "chemical_additions": ["azoxystrobin"]
+    }
+  }
+}

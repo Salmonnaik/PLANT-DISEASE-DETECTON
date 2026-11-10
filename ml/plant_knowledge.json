@@ -1,0 +1,749 @@
+{
+  "_comment": "Reference material for plant care and condition management. This is static agronomic text shown ALONGSIDE an analysis - it never influences what the analysis finds. Chemical entries name widely-documented active-ingredient CLASSES only: no product names, no dosages, no application rates. Every chemical entry requires the user to verify crop-specific registration against the product label and local regulations.",
+  "_version": "1.0.0",
+
+  "chemical_disclaimer": "This names categories of active ingredient that are commonly documented for this type of problem. It is NOT a product recommendation and contains no dosages. Before using any product you must confirm it is registered for your specific crop in your country, read the label, observe the pre-harvest interval, and follow local regulations. If you are unsure of the diagnosis, do not apply a chemical treatment - use the cultural and organic measures instead.",
+
+  "uncertain_guidance": {
+    "immediate_actions": [
+      "Do not apply any chemical treatment yet - an unconfirmed diagnosis is the most common reason a treatment fails",
+      "Remove and bin (do not compost) the worst-affected leaves to reduce spread and make monitoring easier",
+      "Isolate the plant from healthy neighbours if it is in a pot",
+      "Photograph the same leaf again in three to five days to see whether symptoms progress, stay static, or fade"
+    ],
+    "organic_options": [
+      "Improve airflow by thinning crowded growth and increasing spacing",
+      "Water at the soil surface rather than over the foliage, and water early in the day so leaves dry",
+      "Clear fallen leaves and debris from around the base of the plant",
+      "Keep tools and hands clean between plants"
+    ],
+    "cultural_controls": [
+      "Check soil moisture at root depth - both drought and waterlogging produce leaf symptoms",
+      "Review recent changes: new fertiliser, repotting, a move into stronger sun, a cold night",
+      "Inspect leaf undersides and new growth, where most problems appear first"
+    ],
+    "prevention": [
+      "Scout weekly and act on the first symptoms rather than waiting",
+      "Avoid overhead watering late in the day",
+      "Rotate annual crops and remove debris at the end of the season"
+    ]
+  },
+
+  "conditions": {
+    "healthy": {
+      "immediate_actions": [
+        "No treatment is needed for this leaf"
+      ],
+      "organic_options": [],
+      "cultural_controls": [
+        "Continue the current watering and feeding routine",
+        "Keep scouting weekly, especially leaf undersides and lower foliage"
+      ],
+      "chemical_options": null,
+      "prevention": [
+        "Maintain airflow between plants",
+        "Water at the base, early in the day",
+        "Remove fallen debris to limit overwintering spores"
+      ]
+    },
+    "leaf_spot": {
+      "immediate_actions": [
+        "Pick off and bin the spotted leaves - do not compost them",
+        "Stop overhead watering; spots spread by water splash",
+        "Space or thin the plant so foliage dries quickly after rain or dew"
+      ],
+      "organic_options": [
+        "Mulch the soil surface to stop rain splashing spores up onto leaves",
+        "Neem oil or a potassium bicarbonate spray, applied to dry foliage out of direct sun",
+        "Biological fungicides based on Bacillus subtilis as a protectant on new growth"
+      ],
+      "cultural_controls": [
+        "Switch to drip or base watering",
+        "Prune the lowest leaves to raise the canopy away from the soil",
+        "Rotate annual crops away from the same family for two to three seasons",
+        "Clear and destroy all crop residue at the end of the season"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "copper-based fungicides",
+          "mancozeb",
+          "chlorothalonil"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Use certified disease-free seed and transplants",
+        "Avoid working among plants while the foliage is wet",
+        "Choose resistant varieties where available"
+      ]
+    },
+    "bacterial_leaf_spot": {
+      "immediate_actions": [
+        "Remove affected leaves and bin them; disinfect tools afterwards",
+        "Stop all overhead watering immediately",
+        "Do not handle or harvest the plant while the foliage is wet - this is how it spreads fastest"
+      ],
+      "organic_options": [
+        "Copper-based products are the main organically-acceptable option, used preventively on unaffected growth",
+        "Improve air movement to shorten leaf wetness periods"
+      ],
+      "cultural_controls": [
+        "Use certified pathogen-free seed; hot-water seed treatment is standard for some crops",
+        "Rotate out of the affected family for at least a year",
+        "Remove volunteer and weed hosts nearby",
+        "Increase spacing to reduce humidity in the canopy"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "copper-based bactericides, often tank-mixed with mancozeb"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Start with clean seed and transplants - this disease is usually introduced, not local",
+        "Avoid splashing water between plants",
+        "Sanitise trays, tools and stakes between seasons"
+      ]
+    },
+    "early_blight": {
+      "immediate_actions": [
+        "Remove and bin the affected lower leaves",
+        "Mulch the soil to block spore splash from debris",
+        "Check that the plant is not nitrogen-starved, which accelerates lower-leaf loss"
+      ],
+      "organic_options": [
+        "Copper-based protectant sprays on healthy foliage",
+        "Bacillus subtilis biofungicides as a preventive on new growth",
+        "Thick organic mulch to break the soil-to-leaf spore cycle"
+      ],
+      "cultural_controls": [
+        "Stake or cage plants to lift foliage off the ground",
+        "Water at the base, early in the day",
+        "Maintain balanced nutrition to delay leaf senescence",
+        "Rotate away from tomato, potato and other solanaceous crops for two to three seasons"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "chlorothalonil",
+          "mancozeb",
+          "copper-based fungicides"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Destroy cull piles and volunteer plants",
+        "Choose resistant or tolerant varieties",
+        "Remove crop debris completely after harvest"
+      ]
+    },
+    "late_blight": {
+      "immediate_actions": [
+        "Treat as urgent: this can destroy a planting within days in cool, wet weather",
+        "Remove and destroy infected plants away from the growing area - bag them, do not compost",
+        "Stop overhead irrigation entirely",
+        "Inspect every plant in the planting today, not just this one"
+      ],
+      "organic_options": [
+        "Copper-based products, applied preventively to unaffected plants - organic options are only protective, not curative",
+        "Remove lower leaves and increase spacing to reduce humidity",
+        "In severe outbreaks, destroying the crop early is often the only effective organic response"
+      ],
+      "cultural_controls": [
+        "Plant certified seed and resistant varieties - this is the main durable control",
+        "Avoid dense canopies that stay wet",
+        "Destroy the haulm before harvest to protect tubers in potato",
+        "Never leave cull piles near the growing area"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "metalaxyl or mefenoxam (systemic)",
+          "dimethomorph",
+          "cymoxanil",
+          "mancozeb (protectant)"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Monitor local late blight forecasts during cool, wet periods",
+        "Use resistant cultivars where available",
+        "Source seed potatoes and transplants from certified suppliers only"
+      ]
+    },
+    "powdery_mildew": {
+      "immediate_actions": [
+        "Improve airflow: thin crowded shoots and increase spacing",
+        "Remove the worst-affected leaves",
+        "Move potted plants out of deep shade into brighter, better-ventilated positions"
+      ],
+      "organic_options": [
+        "Potassium bicarbonate sprays, which also have some curative effect",
+        "Sulphur-based products - but not in hot weather and never close to an oil application",
+        "Neem oil or horticultural oil on dry foliage, out of direct sun",
+        "Milk-based sprays are a widely used home remedy with modest, variable results"
+      ],
+      "cultural_controls": [
+        "Reduce humidity around the foliage; avoid crowding",
+        "Avoid heavy nitrogen feeding, which produces susceptible soft growth",
+        "Water at the base - unlike most fungi, powdery mildew does not need wet leaves",
+        "Prune for an open canopy"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "sulphur",
+          "potassium bicarbonate",
+          "myclobutanil",
+          "trifloxystrobin"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Choose resistant varieties - the difference is substantial for roses, grapes and cucurbits",
+        "Space plants for airflow at planting time",
+        "Remove and destroy infected debris at the end of the season"
+      ]
+    },
+    "downy_mildew": {
+      "immediate_actions": [
+        "Remove affected leaves and bin them",
+        "Stop overhead watering and avoid wetting foliage in the evening",
+        "Increase ventilation, especially in a greenhouse or polyhouse"
+      ],
+      "organic_options": [
+        "Copper-based protectant sprays on unaffected growth",
+        "Drastically reduce leaf wetness duration - this is more effective than any spray",
+        "Wider spacing and shoot thinning to cut canopy humidity"
+      ],
+      "cultural_controls": [
+        "Water early in the day so leaves dry before nightfall",
+        "Orient rows with the prevailing wind where possible",
+        "Remove and destroy infected debris",
+        "Rotate annual crops"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "copper-based fungicides",
+          "mandipropamid",
+          "metalaxyl or mefenoxam"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Use resistant cultivars where they exist",
+        "Avoid dense, shaded plantings",
+        "Monitor during cool, humid weather, which is when it establishes"
+      ]
+    },
+    "rust": {
+      "immediate_actions": [
+        "Remove and bin affected leaves - do not shake them, which disperses spores",
+        "Avoid wetting the foliage",
+        "Clear fallen infected leaves from around the plant"
+      ],
+      "organic_options": [
+        "Sulphur-based products applied early, before pustules are widespread",
+        "Neem oil as a protectant on new growth",
+        "Thorough removal and destruction of infected leaves and debris"
+      ],
+      "cultural_controls": [
+        "Increase spacing and prune for airflow",
+        "Water at the base, early in the day",
+        "Remove nearby alternate host plants where the rust species requires one",
+        "Avoid excessive nitrogen"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "sulphur",
+          "myclobutanil",
+          "triadimefon",
+          "mancozeb"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Plant resistant varieties - particularly effective for roses and beans",
+        "Clear all fallen leaves at the end of the season",
+        "Keep foliage dry"
+      ]
+    },
+    "anthracnose": {
+      "immediate_actions": [
+        "Prune out affected leaves, shoots and fruit, and bin them",
+        "Disinfect pruning tools between cuts",
+        "Stop overhead watering"
+      ],
+      "organic_options": [
+        "Copper-based protectant sprays during wet weather",
+        "Remove all mummified fruit and infected twigs, which are the main overwintering source",
+        "Improve airflow through pruning"
+      ],
+      "cultural_controls": [
+        "Prune in dry weather only",
+        "Remove fallen fruit and leaf litter",
+        "Avoid wounding plants during wet conditions",
+        "Rotate annual crops and use clean seed"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "copper-based fungicides",
+          "mancozeb",
+          "azoxystrobin"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Sanitation is the main control: remove all infected plant material",
+        "Choose resistant varieties for mango, chilli and beans where available",
+        "Avoid dense canopies that hold moisture"
+      ]
+    },
+    "leaf_scorch": {
+      "immediate_actions": [
+        "Check soil moisture at root depth, not at the surface - both drought and waterlogging cause this",
+        "Move potted plants out of harsh afternoon sun and drying wind",
+        "Stop fertilising until the cause is identified; salt build-up is a common cause",
+        "Flush pots thoroughly with clean water if over-fertilising is suspected"
+      ],
+      "organic_options": [
+        "Mulch to stabilise soil moisture and temperature",
+        "Water deeply and less often rather than little and often",
+        "Improve soil structure with compost so it holds moisture without waterlogging"
+      ],
+      "cultural_controls": [
+        "Check that pots drain freely and are not root-bound",
+        "Use collected rainwater if your tap water is hard or softened",
+        "Provide wind protection or afternoon shade for sensitive plants",
+        "Acclimatise plants gradually when moving them into stronger light"
+      ],
+      "chemical_options": null,
+      "prevention": [
+        "Water consistently - the irregular wet-dry cycle causes much of this damage",
+        "Fertilise at the recommended strength and no more",
+        "Match the plant to the position rather than fighting the position"
+      ]
+    },
+    "mosaic_virus": {
+      "immediate_actions": [
+        "Isolate the plant from healthy ones immediately",
+        "Wash hands and disinfect tools after touching it - these viruses spread mechanically",
+        "Do not take cuttings or save seed from this plant",
+        "Confirm the plant is not simply a variegated cultivar before acting"
+      ],
+      "organic_options": [
+        "There is no cure for a virus-infected plant. Management means limiting spread",
+        "Control insect vectors - aphids, whiteflies and thrips - with insecticidal soap or neem oil",
+        "Use yellow sticky traps to monitor and reduce vector populations",
+        "Remove and destroy confirmed infected plants to protect the rest"
+      ],
+      "cultural_controls": [
+        "Use certified virus-free seed and planting material",
+        "Control weeds, which often harbour both virus and vectors",
+        "Avoid handling plants unnecessarily; never smoke or handle tobacco near solanaceous crops",
+        "Use insect-proof netting at the nursery stage"
+      ],
+      "chemical_options": null,
+      "prevention": [
+        "Plant resistant varieties where they exist - this is the only reliable protection",
+        "Manage the insect vectors rather than the virus",
+        "Sanitise tools, trays and stakes between plants and seasons"
+      ]
+    },
+    "pest_damage": {
+      "immediate_actions": [
+        "Find the pest before treating: inspect undersides, leaf axils and new growth, and check at dusk",
+        "Hand-pick caterpillars, beetles, slugs and snails where numbers are small",
+        "Remove badly chewed leaves if they are no longer functional"
+      ],
+      "organic_options": [
+        "Insecticidal soap or horticultural oil for soft-bodied insects, applied to the undersides",
+        "Bacillus thuringiensis (Bt) for caterpillars specifically - it does not affect other insects",
+        "Neem oil as a feeding deterrent and growth regulator",
+        "Encourage predators: ladybirds, lacewings, parasitic wasps and birds",
+        "Physical barriers - netting, collars, copper tape for slugs"
+      ],
+      "cultural_controls": [
+        "Keep the area free of debris where pests shelter",
+        "Water in the morning so the surface is dry at night when slugs feed",
+        "Avoid excess nitrogen, which produces soft growth pests prefer",
+        "Rotate crops to break pest life cycles"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "spinosad",
+          "pyrethrins",
+          "Bacillus thuringiensis (biological)"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Scout weekly - early small populations are far easier to manage",
+        "Use floating row covers on vulnerable young plants",
+        "Support natural predators by avoiding broad-spectrum insecticides"
+      ]
+    },
+    "nutrient_deficiency": {
+      "immediate_actions": [
+        "Identify the pattern before feeding: which leaves, and are the veins still green?",
+        "Check soil moisture - waterlogged roots cannot take up nutrients that are present",
+        "Do not apply a heavy dose of fertiliser as a guess; it can worsen the problem"
+      ],
+      "organic_options": [
+        "Well-rotted compost or worm castings for a broad, slow nutrient supply",
+        "Seaweed or fish-based liquid feeds for a gentle general correction",
+        "Composted manure worked into the surface for nitrogen over time",
+        "Adjust pH gradually with lime or elemental sulphur based on a soil test"
+      ],
+      "cultural_controls": [
+        "Test soil pH: most nutrients become unavailable outside pH 6.0-7.0 even when present",
+        "Improve drainage and soil structure so roots can function",
+        "Mulch to stabilise soil moisture and feed soil biology",
+        "Repot root-bound container plants into fresh medium"
+      ],
+      "chemical_options": {
+        "active_ingredient_classes": [
+          "balanced NPK fertiliser (for general paling)",
+          "chelated iron (for interveinal yellowing on new growth)",
+          "magnesium sulphate (for interveinal yellowing on older leaves)"
+        ],
+        "requires_verification": true
+      },
+      "prevention": [
+        "Feed according to the plant's growth stage rather than on a fixed schedule",
+        "Test soil every year or two rather than guessing",
+        "Maintain organic matter, which buffers nutrient availability"
+      ]
+    },
+    "senescence": {
+      "immediate_actions": [
+        "Remove the old leaf if you prefer - this is normal ageing, not a problem to treat"
+      ],
+      "organic_options": [],
+      "cultural_controls": [
+        "Confirm new growth is healthy; if it is, no action is needed",
+        "If many leaves are ageing at once, check watering and feeding"
+      ],
+      "chemical_options": null,
+      "prevention": [
+        "Keep nutrition steady through the growing season to delay leaf drop",
+        "Remove spent leaves to reduce places where pathogens overwinter"
+      ]
+    }
+  },
+
+  "species": {
+    "mango": {
+      "common_name": "Mango",
+      "scientific_name": "Mangifera indica",
+      "category": "Fruit tree",
+      "aliases": ["aam", "mangifera"],
+      "common_issues": ["anthracnose", "powdery_mildew", "bacterial_leaf_spot", "leaf_scorch"],
+      "care": {
+        "watering": "Deep but infrequent. Allow the top of the soil to dry between waterings; mature trees are drought-tolerant and resent constantly wet roots. Reduce water during flowering to improve fruit set.",
+        "soil": "Deep, free-draining loam, pH 5.5-7.5. Will not tolerate waterlogging - plant on a mound in heavy soil.",
+        "light": "Full sun, at least six hours daily.",
+        "feeding": "Feed after harvest and before flowering. Avoid heavy nitrogen close to flowering, which pushes leaf growth at the expense of fruit.",
+        "pruning": "Open the canopy after harvest to improve airflow, which is the main cultural control for anthracnose and mildew."
+      },
+      "prevention": [
+        "Prune for an open canopy - anthracnose thrives in still, humid air",
+        "Collect and destroy fallen fruit and leaves",
+        "Avoid overhead irrigation during flowering"
+      ]
+    },
+    "neem": {
+      "common_name": "Neem",
+      "scientific_name": "Azadirachta indica",
+      "category": "Tree",
+      "aliases": ["azadirachta", "nimtree", "indian lilac"],
+      "common_issues": ["leaf_spot", "powdery_mildew", "pest_damage", "leaf_scorch"],
+      "care": {
+        "watering": "Very drought-tolerant once established. Water young trees regularly for the first two seasons, then only in extended dry spells. Overwatering is the usual cause of problems.",
+        "soil": "Tolerates poor, sandy and rocky soils. Needs good drainage; will not survive waterlogging.",
+        "light": "Full sun.",
+        "feeding": "Rarely needs feeding. A little compost annually is sufficient.",
+        "pruning": "Prune to shape in the dry season; remove dead wood."
+      },
+      "prevention": [
+        "Avoid overwatering, which is the most common cause of decline",
+        "Keep the base clear of debris",
+        "Ensure free drainage"
+      ]
+    },
+    "rose": {
+      "common_name": "Rose",
+      "scientific_name": "Rosa species",
+      "category": "Ornamental shrub",
+      "aliases": ["rosa", "gulab"],
+      "common_issues": ["powdery_mildew", "rust", "leaf_spot", "pest_damage"],
+      "care": {
+        "watering": "Deep watering at the base, two or three times a week in dry weather. Never wet the foliage - black spot and mildew both depend on leaf wetness or humidity.",
+        "soil": "Rich, well-drained loam, pH 6.0-6.5. Mulch to keep roots cool and moist.",
+        "light": "At least six hours of direct sun; morning sun is ideal because it dries dew early.",
+        "feeding": "Feed at the start of growth and after each flush of flowers. Stop feeding well before dormancy.",
+        "pruning": "Prune hard in late dormancy to an open vase shape. Airflow through the centre is the single most effective disease control for roses."
+      },
+      "prevention": [
+        "Choose disease-resistant varieties - the difference in black spot and mildew is dramatic",
+        "Water at the base, early in the day",
+        "Clear fallen leaves, which carry black spot spores over winter",
+        "Space plants so air moves freely between them"
+      ]
+    },
+    "hibiscus": {
+      "common_name": "Hibiscus",
+      "scientific_name": "Hibiscus rosa-sinensis",
+      "category": "Ornamental shrub",
+      "aliases": ["rose of china", "gudhal", "shoe flower"],
+      "common_issues": ["pest_damage", "nutrient_deficiency", "leaf_spot", "leaf_scorch"],
+      "care": {
+        "watering": "Keep evenly moist in the growing season - hibiscus wilts and drops buds quickly if it dries out. Reduce in cool weather.",
+        "soil": "Rich, well-drained, slightly acidic soil, pH 6.0-6.8.",
+        "light": "Full sun to light afternoon shade in very hot climates.",
+        "feeding": "Needs regular potassium-rich feeding during flowering. Yellowing leaves on hibiscus are very often a feeding or watering issue rather than disease.",
+        "pruning": "Pinch tips to encourage branching; prune in early spring."
+      },
+      "prevention": [
+        "Check leaf undersides regularly for aphids, whitefly and mealybug",
+        "Maintain even moisture - fluctuation causes leaf drop and yellowing",
+        "Feed consistently through the flowering season"
+      ]
+    },
+    "banana": {
+      "common_name": "Banana",
+      "scientific_name": "Musa species",
+      "category": "Fruit plant",
+      "aliases": ["musa", "plantain", "kela"],
+      "common_issues": ["leaf_spot", "nutrient_deficiency", "leaf_scorch"],
+      "care": {
+        "watering": "Heavy and consistent - bananas are very thirsty, but roots must not sit in standing water. Mulch heavily to retain moisture.",
+        "soil": "Deep, rich, free-draining soil high in organic matter, pH 5.5-7.0.",
+        "light": "Full sun, with shelter from strong wind which shreds the leaves.",
+        "feeding": "Needs generous potassium and nitrogen through the growing season.",
+        "pruning": "Remove dead and badly spotted leaves at the base to reduce disease pressure and improve airflow."
+      },
+      "prevention": [
+        "Remove old and infected leaves promptly - Sigatoka leaf spots build up on retained foliage",
+        "Provide wind shelter; torn leaves are entry points",
+        "Avoid overhead irrigation and maintain spacing"
+      ]
+    },
+    "papaya": {
+      "common_name": "Papaya",
+      "scientific_name": "Carica papaya",
+      "category": "Fruit plant",
+      "aliases": ["carica", "pawpaw", "papita"],
+      "common_issues": ["mosaic_virus", "anthracnose", "powdery_mildew", "leaf_spot"],
+      "care": {
+        "watering": "Regular but very well drained - papaya roots rot readily. Keep water away from the stem base.",
+        "soil": "Light, rich, free-draining soil, pH 6.0-6.5. Plant on a mound in heavy soil.",
+        "light": "Full sun.",
+        "feeding": "Feed little and often through the growing season; papaya grows and fruits fast.",
+        "pruning": "Remove lower dead leaves. Do not top the plant."
+      },
+      "prevention": [
+        "Control aphids, which transmit papaya ringspot virus - vector control is the only effective virus management",
+        "Remove virus-infected plants promptly to protect the rest",
+        "Never let water pool around the stem base"
+      ]
+    },
+    "guava": {
+      "common_name": "Guava",
+      "scientific_name": "Psidium guajava",
+      "category": "Fruit tree",
+      "aliases": ["psidium", "amrood"],
+      "common_issues": ["anthracnose", "rust", "leaf_spot", "pest_damage"],
+      "care": {
+        "watering": "Moderate and regular while fruiting; tolerates short dry spells once established.",
+        "soil": "Adaptable, but prefers well-drained loam, pH 5.0-7.0.",
+        "light": "Full sun.",
+        "feeding": "Feed two or three times during the growing season.",
+        "pruning": "Prune annually after harvest to keep the canopy open - guava rust is strongly favoured by humid, enclosed canopies."
+      },
+      "prevention": [
+        "Keep the canopy open by annual pruning",
+        "Collect and destroy fallen fruit, which harbours fruit fly and anthracnose",
+        "Avoid overhead watering in humid weather"
+      ]
+    },
+    "apple": {
+      "common_name": "Apple",
+      "scientific_name": "Malus domestica",
+      "category": "Fruit tree",
+      "aliases": ["malus", "seb"],
+      "common_issues": ["leaf_spot", "powdery_mildew", "rust", "anthracnose"],
+      "care": {
+        "watering": "Deep weekly watering in dry weather, particularly while fruit is sizing. Avoid wetting foliage.",
+        "soil": "Well-drained loam, pH 6.0-7.0.",
+        "light": "Full sun.",
+        "feeding": "Feed in early spring before bud break. Avoid late-season nitrogen, which delays hardening.",
+        "pruning": "Prune in dormancy to an open centre. Scab and mildew control depend heavily on airflow and light into the canopy."
+      },
+      "prevention": [
+        "Rake up and destroy fallen leaves, which carry apple scab through the winter",
+        "Choose scab-resistant cultivars where available",
+        "Prune annually for light and air"
+      ]
+    },
+    "grapes": {
+      "common_name": "Grapevine",
+      "scientific_name": "Vitis vinifera",
+      "category": "Fruit vine",
+      "aliases": ["grape", "vitis", "vine", "angoor"],
+      "common_issues": ["powdery_mildew", "downy_mildew", "anthracnose", "leaf_spot"],
+      "care": {
+        "watering": "Deep and infrequent. Grapes are deep-rooted and over-watering produces soft, disease-prone growth and poor fruit.",
+        "soil": "Well-drained, moderately fertile soil, pH 6.0-6.8. Excellent drainage is essential.",
+        "light": "Full sun, with good air movement through the canopy.",
+        "feeding": "Modest feeding only; excess nitrogen strongly increases mildew susceptibility.",
+        "pruning": "Prune hard in dormancy and thin leaves around fruit clusters during the season. Canopy management is the primary mildew control in grapes."
+      },
+      "prevention": [
+        "Thin the canopy to expose clusters to air and light",
+        "Train vines on a trellis for airflow",
+        "Remove and destroy prunings and mummified fruit",
+        "Monitor from bud break - both mildews establish early"
+      ]
+    },
+    "tomato": {
+      "common_name": "Tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "category": "Vegetable",
+      "aliases": ["solanum lycopersicum", "tamatar"],
+      "common_issues": ["early_blight", "late_blight", "leaf_spot", "bacterial_leaf_spot", "mosaic_virus"],
+      "care": {
+        "watering": "Deep and consistent at the base. Irregular watering causes blossom-end rot and splitting; wet foliage drives nearly every tomato leaf disease.",
+        "soil": "Rich, free-draining soil, pH 6.0-6.8, with steady calcium availability.",
+        "light": "Full sun, six to eight hours.",
+        "feeding": "Balanced feeding early, then higher potassium once fruit sets. Excess nitrogen gives leaf growth and little fruit.",
+        "pruning": "Remove the lowest leaves as the plant grows and stake or cage it. Lifting foliage off the soil is the single most effective blight measure."
+      },
+      "prevention": [
+        "Mulch to stop soil splash onto leaves",
+        "Stake and prune to lift and open the canopy",
+        "Rotate out of the solanaceous family for two to three seasons",
+        "Water at the base, early in the day",
+        "Remove all debris at the end of the season"
+      ]
+    },
+    "potato": {
+      "common_name": "Potato",
+      "scientific_name": "Solanum tuberosum",
+      "category": "Vegetable",
+      "aliases": ["solanum tuberosum", "aloo"],
+      "common_issues": ["late_blight", "early_blight", "leaf_spot"],
+      "care": {
+        "watering": "Consistent moisture while tubers form; avoid wetting foliage. Reduce water as the crop matures.",
+        "soil": "Loose, free-draining soil, pH 5.0-6.5. Hill the soil up around stems as they grow.",
+        "light": "Full sun.",
+        "feeding": "Moderate nitrogen early; too much extends leafy growth and delays tubers.",
+        "pruning": "Not pruned, but remove badly blighted foliage and destroy it away from the field."
+      },
+      "prevention": [
+        "Plant certified seed tubers - this is the main route late blight enters a crop",
+        "Hill adequately to protect developing tubers from spores washing down",
+        "Destroy cull piles and volunteer plants",
+        "Monitor blight forecasts in cool, wet weather"
+      ]
+    },
+    "pepper": {
+      "common_name": "Pepper",
+      "scientific_name": "Capsicum annuum",
+      "category": "Vegetable",
+      "aliases": ["capsicum", "bell pepper", "chilli", "chili", "mirch", "capsicum annuum"],
+      "common_issues": ["bacterial_leaf_spot", "anthracnose", "leaf_spot", "mosaic_virus"],
+      "care": {
+        "watering": "Even moisture at the base; peppers drop flowers if they dry out or are waterlogged.",
+        "soil": "Well-drained, fertile soil, pH 6.0-6.8.",
+        "light": "Full sun and warmth.",
+        "feeding": "Balanced feeding; excess nitrogen gives leaves instead of fruit.",
+        "pruning": "Light pruning only. Remove lower leaves touching the soil."
+      },
+      "prevention": [
+        "Use certified pathogen-free seed - bacterial spot is seed-borne",
+        "Never work among plants while the foliage is wet",
+        "Rotate crops and remove debris",
+        "Maintain spacing for airflow"
+      ]
+    },
+    "corn": {
+      "common_name": "Corn",
+      "scientific_name": "Zea mays",
+      "category": "Cereal crop",
+      "aliases": ["maize", "zea mays", "makka"],
+      "common_issues": ["rust", "leaf_spot", "nutrient_deficiency"],
+      "care": {
+        "watering": "Consistent moisture, critical at tasselling and silking. Water at the base.",
+        "soil": "Fertile, free-draining soil, pH 5.8-7.0.",
+        "light": "Full sun.",
+        "feeding": "A heavy nitrogen feeder; side-dress during rapid growth. Pale lower leaves usually mean nitrogen, not disease.",
+        "pruning": "Not pruned. Remove badly diseased lower leaves if infection is heavy."
+      },
+      "prevention": [
+        "Plant in blocks for pollination but maintain row spacing for airflow",
+        "Rotate out of corn to break rust and leaf blight cycles",
+        "Choose resistant hybrids where rust is a recurring problem",
+        "Incorporate or remove residue after harvest"
+      ]
+    },
+    "lemon": {
+      "common_name": "Lemon",
+      "scientific_name": "Citrus limon",
+      "category": "Citrus tree",
+      "aliases": ["citrus limon", "nimbu", "lime", "citrus"],
+      "common_issues": ["bacterial_leaf_spot", "nutrient_deficiency", "pest_damage", "leaf_spot"],
+      "care": {
+        "watering": "Deep watering when the top few centimetres dry. Citrus hates both drought and waterlogging; erratic watering causes leaf drop.",
+        "soil": "Free-draining, slightly acidic soil, pH 6.0-7.0. Never let pots stand in water.",
+        "light": "Full sun, at least six hours.",
+        "feeding": "Citrus-specific feed with micronutrients during growth flushes. Interveinal yellowing on citrus is very often iron, zinc or manganese shortage rather than disease.",
+        "pruning": "Remove dead wood, suckers below the graft, and crossing branches to open the canopy."
+      },
+      "prevention": [
+        "Feed with a citrus fertiliser containing micronutrients - deficiency is the most common cause of citrus leaf symptoms",
+        "Inspect new flushes for leaf miner and psyllid damage",
+        "Ensure free drainage",
+        "Avoid overhead watering"
+      ]
+    },
+    "orange": {
+      "common_name": "Orange",
+      "scientific_name": "Citrus sinensis",
+      "category": "Citrus tree",
+      "aliases": ["citrus sinensis", "sweet orange", "santra", "mandarin"],
+      "common_issues": ["bacterial_leaf_spot", "nutrient_deficiency", "pest_damage", "anthracnose"],
+      "care": {
+        "watering": "Deep and regular, allowing the surface to dry between waterings. Avoid waterlogging.",
+        "soil": "Free-draining soil, pH 6.0-7.5.",
+        "light": "Full sun.",
+        "feeding": "Citrus feed with micronutrients, split across the growing season.",
+        "pruning": "Light pruning to remove dead wood and open the canopy; avoid heavy cuts."
+      },
+      "prevention": [
+        "Feed with micronutrients to prevent the chlorosis that mimics disease",
+        "Monitor for citrus psyllid, which transmits serious citrus disease",
+        "Maintain drainage and avoid wetting foliage",
+        "Remove and destroy fallen infected leaves and fruit"
+      ]
+    }
+  },
+
+  "generic_species": {
+    "common_name": "Unidentified plant",
+    "scientific_name": null,
+    "category": "Unknown",
+    "common_issues": [],
+    "care": {
+      "watering": "Water when the top two to three centimetres of soil feel dry, and water at the base rather than over the leaves. Most leaf problems are made worse by wet foliage, and most root problems by soil that never dries.",
+      "soil": "Use a free-draining medium with organic matter. Check that pots drain freely and are not root-bound.",
+      "light": "Match light to the plant: most flowering and fruiting plants want six or more hours of sun, most foliage plants prefer bright indirect light. Acclimatise gradually when moving a plant into stronger light.",
+      "feeding": "Feed at the recommended strength during active growth only. Over-feeding causes salt burn, which looks like disease.",
+      "pruning": "Remove dead and badly affected leaves, and thin crowded growth to improve airflow."
+    },
+    "prevention": [
+      "Identify the plant so that care and treatment can be matched to it",
+      "Water at the base, early in the day",
+      "Keep air moving around the foliage",
+      "Remove fallen leaves and debris",
+      "Inspect new growth and leaf undersides weekly"
+    ]
+  }
+}

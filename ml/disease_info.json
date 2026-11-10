@@ -1,0 +1,239 @@
+{
+  "_comment": "Static agronomic reference text keyed by the dataset's raw class name. This is reference material shown next to a prediction - it is never used to produce or influence a prediction. Sources: PlantVillage class definitions and standard extension-service descriptions.",
+  "_fallback": {
+    "description": "This condition is part of the trained class list but no reference description has been added yet.",
+    "symptoms": [],
+    "management": [],
+    "severity": "unknown"
+  },
+  "classes": {
+    "Tomato___healthy": {
+      "description": "No disease symptoms detected. The leaf shows uniform green pigmentation with intact margins and no lesions.",
+      "symptoms": ["Uniform green colour", "No necrotic spots or lesions", "Intact leaf margins"],
+      "management": [
+        "Continue the current irrigation and nutrition schedule",
+        "Keep scouting weekly, especially the lower canopy",
+        "Maintain airflow between plants to limit leaf wetness"
+      ],
+      "severity": "none"
+    },
+    "Tomato___Early_blight": {
+      "description": "Early blight is caused by the fungus Alternaria solani. It starts on older, lower leaves and progresses upward, reducing photosynthetic area and causing premature defoliation.",
+      "symptoms": [
+        "Dark brown spots with concentric rings, giving a target-board pattern",
+        "Yellow halo surrounding each lesion",
+        "Lower, older leaves affected first",
+        "Progressive defoliation from the base upward"
+      ],
+      "management": [
+        "Remove and destroy affected lower leaves",
+        "Apply a protectant fungicide such as chlorothalonil or mancozeb on the recommended interval",
+        "Mulch the soil surface to stop rain-splash of spores",
+        "Rotate away from solanaceous crops for two to three seasons"
+      ],
+      "severity": "moderate"
+    },
+    "Tomato___Late_blight": {
+      "description": "Late blight is caused by the oomycete Phytophthora infestans. It spreads extremely fast in cool, wet weather and can destroy an entire field within days, which makes it the most urgent condition in this class list.",
+      "symptoms": [
+        "Large, irregular, water-soaked greasy grey-green patches",
+        "White fuzzy sporulation on the underside of the leaf in humid conditions",
+        "Rapidly spreading brown-black lesions without a distinct ring pattern",
+        "Firm brown rot on fruit"
+      ],
+      "management": [
+        "Act immediately - remove and destroy infected plants away from the field",
+        "Apply a systemic fungicide containing metalaxyl or cymoxanil",
+        "Avoid overhead irrigation and evening watering",
+        "Plant certified disease-free seed and resistant cultivars"
+      ],
+      "severity": "severe"
+    },
+    "Tomato___Leaf_Mold": {
+      "description": "Leaf mould, caused by Passalora fulva (formerly Cladosporium fulvum), is primarily a greenhouse and polyhouse disease driven by sustained high humidity.",
+      "symptoms": [
+        "Pale green to yellow diffuse patches on the upper leaf surface",
+        "Olive-green to grey-brown velvety mould on the lower surface",
+        "Leaves curl, wither and drop while remaining attached for a while",
+        "Rarely affects fruit directly"
+      ],
+      "management": [
+        "Reduce humidity below 85 percent through ventilation and spacing",
+        "Avoid wetting the foliage when irrigating",
+        "Apply chlorothalonil or a copper-based fungicide",
+        "Remove crop debris at the end of the season"
+      ],
+      "severity": "moderate"
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "description": "Septoria leaf spot is caused by the fungus Septoria lycopersici. It overwinters in crop debris and is spread by rain splash and overhead irrigation.",
+      "symptoms": [
+        "Many small circular spots, 1 to 3 mm, with grey centres and dark brown borders",
+        "Tiny black fruiting bodies visible inside the spot centres",
+        "Starts on the lowest leaves after fruit set",
+        "Heavy defoliation in severe cases"
+      ],
+      "management": [
+        "Remove infected lower foliage promptly",
+        "Switch to drip irrigation to keep leaves dry",
+        "Apply mancozeb or a copper fungicide at 7 to 10 day intervals",
+        "Clear and destroy all crop residue after harvest"
+      ],
+      "severity": "moderate"
+    },
+    "Tomato___Bacterial_spot": {
+      "description": "Bacterial spot is caused by several Xanthomonas species. It is seed-borne and worsens with warm, wet, windy weather.",
+      "symptoms": [
+        "Small dark water-soaked spots that turn brown and angular",
+        "Spots often surrounded by a yellow margin",
+        "Scabby raised lesions on fruit",
+        "Leaf margins become ragged and torn"
+      ],
+      "management": [
+        "Use certified pathogen-free seed and transplants",
+        "Apply copper-based bactericides, often tank-mixed with mancozeb",
+        "Avoid working in the field while the foliage is wet",
+        "Rotate crops and remove volunteer solanaceous plants"
+      ],
+      "severity": "moderate"
+    },
+    "Tomato___Target_Spot": {
+      "description": "Target spot is caused by Corynespora cassiicola and affects leaves, stems and fruit, often confused with early blight.",
+      "symptoms": [
+        "Small brown spots that enlarge into lesions with concentric rings",
+        "Light tan centres that may crack",
+        "Pitted sunken lesions on fruit"
+      ],
+      "management": [
+        "Improve canopy airflow by pruning and correct spacing",
+        "Apply a fungicide programme rotating active ingredients",
+        "Remove infected debris from the field"
+      ],
+      "severity": "moderate"
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "description": "Damage caused by the two-spotted spider mite (Tetranychus urticae), a sap-sucking pest rather than a pathogen. It thrives in hot, dry, dusty conditions.",
+      "symptoms": [
+        "Fine pale stippling or speckling across the leaf surface",
+        "Bronze or rusty discolouration as damage accumulates",
+        "Fine webbing on the leaf underside",
+        "Leaves dry out and drop"
+      ],
+      "management": [
+        "Spray a miticide or horticultural oil, covering the leaf underside",
+        "Raise humidity and wash down foliage to suppress populations",
+        "Introduce predatory mites such as Phytoseiulus persimilis",
+        "Control dust along field edges and roads"
+      ],
+      "severity": "moderate"
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "description": "Tomato yellow leaf curl virus (TYLCV) is a begomovirus transmitted by the whitefly Bemisia tabaci. There is no curative treatment once a plant is infected.",
+      "symptoms": [
+        "Severe upward curling and cupping of leaves",
+        "Marked yellowing of leaf margins",
+        "Stunted growth with shortened internodes",
+        "Flower drop and heavy yield loss"
+      ],
+      "management": [
+        "Remove and destroy infected plants to cut the inoculum source",
+        "Control whiteflies with yellow sticky traps and approved insecticides",
+        "Use insect-proof nets in the nursery stage",
+        "Plant TYLCV-resistant varieties"
+      ],
+      "severity": "severe"
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "description": "Tomato mosaic virus (ToMV) is a highly stable virus spread mechanically by hands, tools and contaminated seed.",
+      "symptoms": [
+        "Light and dark green mottled mosaic pattern",
+        "Fern-like narrowing or distortion of young leaves",
+        "Stunted plants with uneven ripening",
+        "Internal browning of fruit"
+      ],
+      "management": [
+        "Remove infected plants and wash hands and tools with disinfectant",
+        "Do not smoke or handle tobacco near the crop",
+        "Use certified virus-free seed and resistant cultivars",
+        "Avoid unnecessary handling of the foliage"
+      ],
+      "severity": "severe"
+    },
+    "Potato___healthy": {
+      "description": "No disease symptoms detected. The compound leaf shows healthy green tissue with no lesions or chlorosis.",
+      "symptoms": ["Uniform green foliage", "No lesions or wilting", "Normal leaflet shape"],
+      "management": [
+        "Maintain balanced fertigation",
+        "Scout weekly for early blight on lower leaves",
+        "Keep hilling adequate to protect tubers"
+      ],
+      "severity": "none"
+    },
+    "Potato___Early_blight": {
+      "description": "Potato early blight, caused by Alternaria solani, builds up through the season and is worst on nitrogen-deficient or stressed plants.",
+      "symptoms": [
+        "Dark brown lesions with concentric target-like rings",
+        "Lesions bounded by leaf veins, giving an angular outline",
+        "Yellowing around the lesions",
+        "Oldest leaves affected first"
+      ],
+      "management": [
+        "Apply a protectant fungicide such as mancozeb or chlorothalonil",
+        "Keep nitrogen nutrition adequate to delay leaf senescence",
+        "Rotate out of potato and tomato for at least two seasons",
+        "Destroy cull piles and volunteer plants"
+      ],
+      "severity": "moderate"
+    },
+    "Potato___Late_blight": {
+      "description": "Potato late blight, caused by Phytophthora infestans, is the disease responsible for historic famine-scale crop losses. It can destroy a field in under a week under cool wet conditions.",
+      "symptoms": [
+        "Water-soaked pale green patches that turn brown-black",
+        "White sporulating ring at the lesion edge on the leaf underside",
+        "Blackened petioles and stems",
+        "Reddish-brown granular tuber rot"
+      ],
+      "management": [
+        "Treat as urgent - destroy infected foliage immediately",
+        "Apply a systemic fungicide such as metalaxyl or dimethomorph",
+        "Plant certified seed tubers and resistant varieties",
+        "Destroy the haulm before harvest to protect tubers"
+      ],
+      "severity": "severe"
+    },
+    "Pepper,_bell___healthy": {
+      "description": "No disease symptoms detected. The leaf shows glossy uniform green tissue with no spots or deformation.",
+      "symptoms": ["Glossy uniform green colour", "No necrotic spots", "Normal leaf shape"],
+      "management": [
+        "Maintain consistent soil moisture",
+        "Scout for aphids and whiteflies on the leaf underside",
+        "Avoid overhead irrigation late in the day"
+      ],
+      "severity": "none"
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "description": "Bacterial spot of pepper is caused by Xanthomonas species. It is seed-borne, spreads in warm wet weather and can defoliate plants enough to cause fruit sunscald.",
+      "symptoms": [
+        "Small water-soaked spots that become brown and necrotic",
+        "Angular lesions limited by the leaf veins",
+        "Yellowing and premature leaf drop",
+        "Raised rough scabby spots on fruit"
+      ],
+      "management": [
+        "Use certified pathogen-free seed; hot-water treat suspect seed",
+        "Spray copper plus mancozeb preventively",
+        "Never cultivate or harvest while the foliage is wet",
+        "Rotate for at least one year and remove crop debris"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "aliases": {
+    "Pepper__bell___healthy": "Pepper,_bell___healthy",
+    "Pepper__bell___Bacterial_spot": "Pepper,_bell___Bacterial_spot",
+    "Pepper_bell___healthy": "Pepper,_bell___healthy",
+    "Pepper_bell___Bacterial_spot": "Pepper,_bell___Bacterial_spot",
+    "Tomato___Leaf_mold": "Tomato___Leaf_Mold",
+    "Tomato___Tomato_Leaf_Mold": "Tomato___Leaf_Mold"
+  }
+}

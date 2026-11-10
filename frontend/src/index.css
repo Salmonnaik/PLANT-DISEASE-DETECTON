@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Global styles and the component classes used across the dashboard.
+ *
+ * Anything that appears on three or more pages (cards, buttons, badges, inputs)
+ * lives here as a `@layer components` class rather than as a repeated string of
+ * utilities, so the visual language stays consistent and a change lands
+ * everywhere at once.
+ */
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  * {
+    @apply border-bark-100;
+  }
+
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-bark-50 font-sans text-bark-800 antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold tracking-tight text-bark-900;
+  }
+
+  /* Visible, on-brand focus ring for keyboard users. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-leaf-500 ring-offset-2 ring-offset-white;
+  }
+
+  ::selection {
+    @apply bg-leaf-200 text-leaf-950;
+  }
+
+  /* Slim scrollbars so the sidebar and tables do not get chunky grey bars. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.bark.200') transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-bark-200;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-bark-300;
+  }
+}
+
+@layer components {
+  /* ---- Surfaces ---- */
+  .card {
+    @apply rounded-2xl border border-bark-100 bg-white shadow-card;
+  }
+
+  .card-interactive {
+    @apply card transition-all duration-300 ease-spring hover:-translate-y-0.5 hover:border-leaf-200 hover:shadow-card-hover;
+  }
+
+  .card-header {
+    @apply flex items-start justify-between gap-4 border-b border-bark-100 px-5 py-4;
+  }
+
+  .card-title {
+    @apply text-sm font-semibold uppercase tracking-wider text-bark-500;
+  }
+
+  .card-body {
+    @apply p-5;
+  }
+
+  /* ---- Buttons ---- */
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold
+           transition-all duration-200 ease-spring
+           disabled:pointer-events-none disabled:opacity-55;
+  }
+
+  .btn-primary {
+    @apply btn bg-leaf-gradient text-white shadow-glow-leaf
+           hover:brightness-110 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply btn border border-bark-200 bg-white text-bark-700
+           hover:border-leaf-300 hover:bg-leaf-50 hover:text-leaf-800 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply btn text-bark-600 hover:bg-bark-100 hover:text-bark-900 active:scale-[0.98];
+  }
+
+  .btn-danger {
+    @apply btn bg-blight-600 text-white hover:bg-blight-700 active:scale-[0.98];
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-base;
+  }
+
+  /* ---- Badges ---- */
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+
+  .badge-healthy {
+    @apply badge bg-leaf-100 text-leaf-800;
+  }
+
+  .badge-diseased {
+    @apply badge bg-blight-100 text-blight-700;
+  }
+
+  .badge-uncertain {
+    @apply badge bg-harvest-100 text-harvest-700;
+  }
+
+  .badge-neutral {
+    @apply badge bg-bark-100 text-bark-700;
+  }
+
+  .badge-info {
+    @apply badge bg-sky-100 text-sky-800;
+  }
+
+  /* ---- Forms ---- */
+  .input {
+    @apply w-full rounded-xl border border-bark-200 bg-white px-3.5 py-2.5 text-sm text-bark-800
+           placeholder:text-bark-300
+           focus:border-leaf-400 focus:outline-none focus:ring-2 focus:ring-leaf-500/25;
+  }
+
+  .select {
+    @apply input cursor-pointer appearance-none bg-no-repeat pr-9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23587055'%3E%3Cpath fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-position: right 0.65rem center;
+    background-size: 1.1rem;
+  }
+
+  .label {
+    @apply mb-1.5 block text-xs font-semibold uppercase tracking-wider text-bark-500;
+  }
+
+  /* ---- Navigation ---- */
+  /* Note: the `group` marker cannot live in @apply, so components that need
+     group-hover add it alongside this class in their own className. */
+  .nav-link {
+    @apply relative flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium
+           text-leaf-100/75 transition-all duration-200
+           hover:bg-white/10 hover:text-white;
+  }
+
+  .nav-link-active {
+    @apply bg-white/15 text-white shadow-inner-top;
+  }
+
+  /* ---- Misc ---- */
+  .skeleton {
+    @apply relative overflow-hidden rounded-lg bg-bark-100;
+  }
+
+  .skeleton::after {
+    content: '';
+    @apply absolute inset-0 -translate-x-full animate-shimmer
+           bg-gradient-to-r from-transparent via-white/60 to-transparent;
+  }
+
+  .stat-value {
+    @apply text-3xl font-bold tracking-tight text-bark-900 tabular-nums;
+  }
+
+  .divider {
+    @apply h-px w-full bg-bark-100;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-lg border border-bark-200 bg-white px-2.5 py-1
+           text-xs font-medium text-bark-600;
+  }
+
+  .link {
+    @apply font-medium text-leaf-700 underline decoration-leaf-300 decoration-2 underline-offset-2
+           transition-colors hover:text-leaf-800 hover:decoration-leaf-500;
+  }
+
+  .prose-doc {
+    @apply space-y-3 text-sm leading-relaxed text-bark-600;
+  }
+
+  .prose-doc strong {
+    @apply font-semibold text-bark-800;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Respect the OS "reduce motion" setting: decorative loops are the first
+     thing that makes a dashboard unusable for motion-sensitive users. */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-pulse-ring,
+    .animate-float,
+    .animate-shimmer,
+    .animate-scan-sweep {
+      animation: none !important;
+    }
+  }
+}

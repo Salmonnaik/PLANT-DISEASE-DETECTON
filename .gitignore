@@ -1,0 +1,108 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------------------------------------------------------------------------
+# Secrets and local configuration
+#
+# .env holds the Wi-Fi-adjacent settings, the Flask SECRET_KEY and the optional
+# DEVICE_API_KEY. .env.example is committed instead.
+# ---------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# ---------------------------------------------------------------------------
+# Database
+#
+# The schema and migrations are code; the data is not. -wal and -shm are the
+# WAL journal companions and must never be committed separately.
+# ---------------------------------------------------------------------------
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+backend/database/*.db*
+
+# ---------------------------------------------------------------------------
+# Captured and uploaded images
+#
+# Keep the folder, ignore its contents.
+# ---------------------------------------------------------------------------
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# ---------------------------------------------------------------------------
+# Machine learning artefacts
+#
+# The dataset (gigabytes) and trained weights (tens of megabytes) are generated,
+# not authored. class_labels.json and metadata.json ARE committed when you want
+# a reproducible reference to the model that produced a set of results.
+# ---------------------------------------------------------------------------
+ml/dataset/*
+!ml/dataset/.gitkeep
+ml/.dataset_subset/
+ml/.verify_dataset/
+ml/saved_model/*.keras
+ml/saved_model/*.h5
+ml/saved_model/*.tflite
+ml/reports/*
+!ml/reports/.gitkeep
+
+# ---------------------------------------------------------------------------
+# Node / frontend
+# ---------------------------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/node_modules/
+npm-debug.log*
+yarn-error.log*
+.eslintcache
+*.tsbuildinfo
+
+# ---------------------------------------------------------------------------
+# Logs and scratch files
+# ---------------------------------------------------------------------------
+*.log
+logs/
+smoke.log
+pip-install.log
+npm-install.log
+
+# ---------------------------------------------------------------------------
+# Editors and OS
+# ---------------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Arduino build output
+# ---------------------------------------------------------------------------
+esp32cam/build/
+esp32cam/*.bin
+esp32cam/*.elf
+esp32cam/*.map

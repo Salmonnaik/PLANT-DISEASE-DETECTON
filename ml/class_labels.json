@@ -1,0 +1,115 @@
+{
+  "num_classes": 10,
+  "raw_labels": [
+    "Pepper,_bell___Bacterial_spot",
+    "Pepper,_bell___healthy",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___healthy",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Septoria_leaf_spot",
+    "Tomato___healthy"
+  ],
+  "classes": [
+    {
+      "raw": "Pepper,_bell___Bacterial_spot",
+      "plant": "Bell Pepper",
+      "disease": "Bacterial Spot",
+      "display": "Bell Pepper - Bacterial Spot",
+      "is_healthy": false,
+      "status": "diseased"
+    },
+    {
+      "raw": "Pepper,_bell___healthy",
+      "plant": "Bell Pepper",
+      "disease": "Healthy",
+      "display": "Bell Pepper - Healthy",
+      "is_healthy": true,
+      "status": "healthy"
+    },
+    {
+      "raw": "Potato___Early_blight",
+      "plant": "Potato",
+      "disease": "Early Blight",
+      "display": "Potato - Early Blight",
+      "is_healthy": false,
+      "status": "diseased"
+    },
+    {
+      "raw": "Potato___Late_blight",
+      "plant": "Potato",
+      "disease": "Late Blight",
+      "display": "Potato - Late Blight",
+      "is_healthy": false,
+      "status": "diseased"
+    },
+    {
+      "raw": "Potato___healthy",
+      "plant": "Potato",
+      "disease": "Healthy",
+      "display": "Potato - Healthy",
+      "is_healthy": true,
+      "status": "healthy"
+    },
+    {
+      "raw": "Tomato___Early_blight",
+      "plant": "Tomato",
+      "disease": "Early Blight",
+      "display": "Tomato - Early Blight",
+      "is_healthy": false,
+      "status": "diseased"
+    },
+    {
+      "raw": "Tomato___Late_blight",
+      "plant": "Tomato",
+      "disease": "Late Blight",
+      "display": "Tomato - Late Blight",
+      "is_healthy": false,
+      "status": "diseased"
+    },
+    {
+      "raw": "Tomato___Leaf_Mold",
+      "plant": "Tomato",
+      "disease": "Leaf Mold",
+      "display": "Tomato - Leaf Mold",
+      "is_healthy": false,
+      "status": "diseased"
+    },
+    {
+      "raw": "Tomato___Septoria_leaf_spot",
+      "plant": "Tomato",
+      "disease": "Septoria Leaf Spot",
+      "display": "Tomato - Septoria Leaf Spot",
+      "is_healthy": false,
+      "status": "diseased"
+    },
+    {
+      "raw": "Tomato___healthy",
+      "plant": "Tomato",
+      "disease": "Healthy",
+      "display": "Tomato - Healthy",
+      "is_healthy": true,
+      "status": "healthy"
+    }
+  ],
+  "plants": {
+    "Bell Pepper": [
+      "Bacterial Spot",
+      "Healthy"
+    ],
+    "Potato": [
+      "Early Blight",
+      "Late Blight",
+      "Healthy"
+    ],
+    "Tomato": [
+      "Early Blight",
+      "Late Blight",
+      "Leaf Mold",
+      "Septoria Leaf Spot",
+      "Healthy"
+    ]
+  }
+}
